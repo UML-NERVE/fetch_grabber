@@ -1,0 +1,17 @@
+<launch>
+       
+        <node pkg="fetch_grabber" type="fetch_grabber" name="fetch_grabber" output="screen">
+            <param name="topic_name" value="/head_camera/depth_downsample/points"/>
+            <param name="output_name" value="output"/>
+            <param name="baselink" value="base_link"/>
+            <param name="fieldName" value="z"/>
+            <param name="disTh" value="10"/>
+            <!-- <param name="ptColorTh" value="6"/>
+            <param name="regColorTh" value="5"/>
+            <param name="clustersize" value="600"/> -->
+
+
+
+        </node>
+</launch>
+
